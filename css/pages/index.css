@@ -1,0 +1,45 @@
+.welcome__btn {
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #ec1e79;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #ec1e79;
+  transition: .3s;
+}
+
+.welcome__btn:hover {
+  color: #fff;
+  background: #ec1e79;
+}
+
+.wrapper_welcome {
+  background: url('../../img/bg/coworking.jpg') center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  min-width: initial;
+  position: relative;
+}
+
+.wrapper_welcome:before {
+  /*content: "";*/
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+}
+
+.welcome {
+  width: 190px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

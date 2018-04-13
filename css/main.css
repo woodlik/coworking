@@ -1,0 +1,22 @@
+/* Настройки лейаута */
+@import "layout/normalize.css";
+@import "layout/fonts.css";
+@import "layout/base.css";
+
+/* Компоненты */
+@import "components/header.css";
+@import "components/sidebar.css";
+@import "components/main-content.css";
+@import "components/breadcrumbs.css";
+@import "components/section-title.css";
+@import "components/form.css";
+@import "components/footer.css";
+
+/* Страницы */
+@import "pages/about.css";
+@import "pages/index.css";
+@import "pages/rates.css";
+@import "pages/reviews.css";
+
+/* анимации */
+@import "animations.css"

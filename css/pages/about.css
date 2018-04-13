@@ -1,0 +1,110 @@
+.page-image {
+  position: relative;
+}
+
+.page-image__text {
+  position: absolute;
+  top: 140px;
+  left: 55px;
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-text {
+  line-height: 1.7;
+}
+
+.page-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.page-text ul {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-text h3 {
+  font-size: 18px;
+  color: #27273e;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.page-text li {
+  font-size: 18px;
+  margin-bottom: 6px;
+  padding-left: 30px;
+  background: url('../../img/decor/list-bullet.png') 18px 12px no-repeat
+}
+
+.about-container {
+  padding-right: 180px;
+}
+
+.page-image__picture {
+  max-width: 100%;
+}
+
+.description {
+  padding: 15px 30px;
+  background: #27273e;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 51px;
+}
+
+.description__pink-text {
+  color: #ec1e79;
+  font-weight: bold;
+}
+
+
+.partners{
+  margin-bottom: 39px;
+}
+
+.partners__item {
+  float: left;
+  margin-right: 20px;
+  width: 212px;
+  margin-bottom: 35px;
+  height: 75px;
+
+}
+
+.partners__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 1s;
+}
+
+.partners__link:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+.partners__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.partners__item_middle .partners__image {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.partners__item_right .partners__image {
+  right: 0;
+}

@@ -1,0 +1,106 @@
+.wrap {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.block,
+.block2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wrap:hover .block,
+.wrap:hover .block2 {
+  height: 200px;
+}
+
+.block {
+  transition: height 2s;
+}
+
+.block2 {
+  background: blue;
+  transition: height 2s;
+  transition-delay: 2s;
+}
+
+.animate {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.test-block {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 5px;
+}
+
+.active {
+  animation: move 5s;
+  animation-fill-mode: forwards;
+}
+
+.rotateblock {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  background: blueviolet;
+  color: #fff;
+  line-height: 200px;
+  position: relative;
+  animation: rotate 2s linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.rotateblock:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.rotateblock:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  100% {
+    transform:  translate(200px) rotate(360deg);
+  }
+}
+
+.test-check:checked+.animate .test-block {
+  animation: move 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px);
+  }
+  32% {
+    transform: translate(200px) scale(2);
+  }
+  55% {
+    transform: translate(400px) rotate(180deg);
+  }
+  100% {
+    transform: translate(600px) skewX(10deg);
+  }
+}

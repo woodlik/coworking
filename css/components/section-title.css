@@ -1,0 +1,12 @@
+.section-title {
+  font-weight: bold;
+  font-size: 50px;
+  color: #221f1f;
+  margin-bottom: 24px;
+  
+}
+
+.section-title-uppercase{
+  text-transform: uppercase;
+
+}

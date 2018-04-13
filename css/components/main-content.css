@@ -1,0 +1,8 @@
+.main-content {
+  float: left;
+  width: 880px;
+}
+
+.main-content_padding_top {
+  padding-top: 40px;
+}

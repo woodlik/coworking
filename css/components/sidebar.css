@@ -1,0 +1,69 @@
+.sidebar {
+  float: left;
+  width: 180px;
+  padding-right: 10px;
+  padding-top: 40px;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-menu__item {
+  margin-bottom: 30px;
+}
+
+.nav-menu__link {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+
+.nav-menu__item_active .nav-menu__icon {
+  background-position-y: -100px;
+}
+
+.nav-menu__item_active .nav-menu__text {
+  color: #221f1f;
+}
+
+.nav-menu__icon {
+  background: url('../../img/icons/icons-sprite.png') 0 0 no-repeat;
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.nav-menu__icon_wallet-hover {
+  background-position: -100px -100px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.nav-menu__icon_wallet {
+  background-position-x: -100px;
+}
+
+.nav-menu__icon_star {
+  background-position-x: -200px;
+}
+
+.nav-menu__link:hover .nav-menu__icon {
+  background-position-y: -100px;
+}
+
+.nav-menu__link:hover .nav-menu__text {
+  color: #221f1f;
+}
+
+.nav-menu__text {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 120px;
+  color: #ec1e79;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 1s;
+}
